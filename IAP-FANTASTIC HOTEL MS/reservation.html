@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Reservation</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eee;
+}
+
+/* HEADER */
+.header {
+    background: #0e0ee7;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header span {
+    color: orange;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #2d2dd6;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* TITLE */
+.title {
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* FORM CONTAINER */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* BOX */
+.box {
+    background: rgb(244, 246, 249);
+    border: 2px solid #2d2dd6;
+    border-radius: 20px;
+    padding: 20px;
+    width: 40%;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+/* BOX HEADER */
+.box h3 {
+    background: #e5d224;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* FORM ROW */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.form-group label {
+    width: 50%;
+}
+
+.form-group input,
+.form-group select {
+    width: 45%;
+    padding: 5px;
+}
+
+/* RADIO */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* BOTTOM */
+.bottom {
+    text-align: center;
+    margin: 20px;
+}
+
+.bottom select {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    background: #2d2dd6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    FANTASTIC <span>HOTEL MANAGEMENT SYSTEM</span>
+</div>
+
+<div class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Room.html">Room</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="contact us.html">Contact us</a>
+    <a href="Reservation.html">Reservation</a>
+</div>
+
+<div class="title">RESERVATION</div>
+
+<div class="container">
+
+    <!-- PERSONAL INFO -->
+    <div class="box">
+        <h3>PERSONAL INFORMATION</h3>
+
+        <div class="form-group">
+            <label>Title</label>
+            <select><option>Mr</option><option>Ms</option></select>
+        </div>
+
+        <div class="form-group">
+            <label>First name</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Last name</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email">
+        </div>
+
+        <div class="form-group">
+            <label>Nationality *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="nation"> Rwanda</label>
+                <label><input type="radio" name="nation"> Not</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Passport country</label>
+            <select><option>Select</option></select>
+        </div>
+
+        <div class="form-group">
+            <label>Phone number</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <!-- ROOM INFO -->
+    <div class="box">
+        <h3>ROOM INFORMATION</h3>
+
+        <div class="form-group">
+            <label>Types of Room</label>
+            <select><option>Single</option><option>Double</option></select>
+        </div>
+
+        <div class="form-group">
+            <label>Bedding Type</label>
+            <select><option>King</option><option>Queen</option></select>
+        </div>
+
+        <div class="form-group">
+            <label>No of Rooms</label>
+            <input type="number">
+        </div>
+
+        <div class="form-group">
+            <label>Meal Type</label>
+            <select><option>Breakfast</option><option>Full</option></select>
+        </div>
+
+        <div class="form-group">
+            <label>Check-in</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label>Check-out</label>
+            <input type="date">
+        </div>
+    </div>
+
+</div>
+
+<!-- PAYMENT -->
+<div class="bottom">
+    <label>Payment mode</label>
+    <select>
+        <option>Cash</option>
+        <option>Card</option>
+        <option>Mobile Money</option>
+    </select>
+    <a href="submit.html" class="btn">submit</a>
+</div>
+
+</body>
+</html>

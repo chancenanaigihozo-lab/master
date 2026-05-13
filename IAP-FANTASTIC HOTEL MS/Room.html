@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hotel Management System</title>
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header{
+    background:#1e1ebd;
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    background:#1e1ebd;
+    padding-bottom:10px;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* TITLE */
+.title{
+    background:#ddd;
+    text-align:center;
+    padding:10px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* ROOMS SECTION */
+.rooms{
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
+}
+
+.room{
+    width:30%;
+    text-align:center;
+}
+
+.room img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+/* LABEL */
+.label{
+    background:#2c2cbf;
+    color:white;
+    padding:10px;
+    margin-top:-20px;
+    display:inline-block;
+    position:relative;
+}
+
+/* STARS */
+.stars{
+    margin:10px 0;
+    font-size:22px;
+}
+
+/* PRICE + BUTTON */
+.price{
+    font-size:18px;
+    margin-right:10px;
+}
+
+.book{
+    background:orange;
+    border:none;
+    padding:10px 20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.bottom{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    FANTASTIC HOTEL MANAGEMENT SYSTEM
+</div>
+
+<div class="nav">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Room.html">Room</a>
+    <a href="contact us.html">Contact</a>
+    <a href="Reservation.html">Reservation</a>
+</div>
+
+<div class="title">Rooms And Rates</div>
+
+<div class="rooms">
+
+    <!-- ROOM 1 -->
+    <div class="room">
+        <img src="re.png" alt="">
+        <div class="label">Delux Room</div>
+        <div class="stars">★★★★★</div>
+        <div class="bottom">
+            <span class="price">$ 300</span>
+            <button class="book">Book Now</button>
+        </div>
+    </div>
+
+    <!-- ROOM 2 -->
+    <div class="room">
+        <img src="no.png" alt="">
+        <div class="label">Delux Room</div>
+        <div class="stars">★★★★★</div>
+        <div class="bottom">
+            <span class="price">$ 250</span>
+            <button class="book">Book Now</button>
+        </div>
+    </div>
+
+    <!-- ROOM 3 -->
+    <div class="room">
+        <img src="ooh.png" alt="">
+        <div class="label">Delux Room</div>
+        <div class="stars">★★★★★</div>
+        <div class="bottom">
+            <span class="price">$ 200</span>
+            <button class="book">Book Now</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
