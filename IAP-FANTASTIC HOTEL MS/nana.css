@@ -1,0 +1,35 @@
+ body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(to right, #16ee19, #0cd331);
+            color: white;
+            padding: 20px;
+        }
+
+        .header h2 {
+            margin: 0;
+        }
+
+        .header span {
+            color: rgb(240, 161, 15);
+        }
+
+        /* Navbar */
+        .nav {
+            margin-top: 15px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
